@@ -78,7 +78,7 @@ canvas().render({
 });
 ```
 
-## Layer Properties
+### Layer Properties
 
 Layer properties use to describe how a layer will rendered into your canvas. See examples below. 
 
@@ -86,7 +86,23 @@ Layer properties use to describe how a layer will rendered into your canvas. See
 {
    width : 100,
    height : 100,
-   radius : 25
+   radius : 25, 
+   x : 0,
+   y : 0,
+   points : [{x:0,y:0}],
+   color : "rgba(0,0,0,0.2)",
+   rotate : {
+      angle : 45, 
+      x : 0, 
+      y : 0
+   },
+   translate : {x:1,y:1},
+   scale : {x:2,y:2},
+   Transform : {
+      scale : {width:0,height:0},
+      skew : {x:0,y:0},
+      translate:{x:0,y:0}
+   }
 } 
 
 ```
