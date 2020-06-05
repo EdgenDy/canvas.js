@@ -102,7 +102,16 @@ Layer properties use to describe how a layer will rendered into your canvas. See
       scale : {width:0,height:0},
       skew : {x:0,y:0},
       translate:{x:0,y:0}
-   }
+   }, 
+   fontFamily : "Consolas", 
+   fontSize : 20,
+   fontStyle : "Italic", 
+   fontVariant : "small-caps", 
+   shadow : {
+      x : 0, y : 1,
+      blur : 2,
+      color : "rgb(0,0,0,0.3)"
+   } 
 } 
 
 ```
