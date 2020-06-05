@@ -2,9 +2,12 @@
 Rendering, customizing, tweening and animating canvas element was made easy with **canvas.js**. 
 
 ### Rendering (text, rectangles, arcs and paths
-Rendering a rectangle, 10 pixels away from the upper left corner of the canvas with the size of 80 for its with and height with a shadow with an offset of 0 for its x-axis and an offset of 1 for its y-axis and a semi transparent for its shadow color, rotating 45 degrees on its center coordinates of 50 pixels for its x and y axis and finally filling with a color of red. 
+Rendering method is the heart of canvas.js because this is where rendering of shapes, texts and paths happens. It requires an object of a Layer's property and values. See examples below. 
+ 
+Rendering a rectangle
+
 ```javascript
-canvas.get(0).render({ // or just 'canvas().render({' for simplification
+canvas().render({
     type : "rect", 
     x : 10, y : 10,
     width : 80, height : 80,
@@ -50,4 +53,27 @@ canvas().render({
    }] 
 });
 
+```
+
+Rendering an arc 
+
+```javascript
+canvas().render({
+   type : "arc",
+   x : 250, y : 250
+   radius : 25, 
+   angle : {start:0,end:270}
+});
+
+
+```
+
+Rendering a circle
+
+```javascript
+canvas().render({
+   type : "circle", 
+   x : 20, y : 20,
+   radius : 30,
+});
 ```
