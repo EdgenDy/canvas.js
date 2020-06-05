@@ -78,7 +78,7 @@ canvas().render({
 });
 ```
 
-##Layer Properties
+## Layer Properties
 
 Layer properties use to describe how a layer will rendered into your canvas. See examples below. 
 
