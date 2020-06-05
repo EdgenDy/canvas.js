@@ -84,6 +84,7 @@ Layer properties use to describe how a layer will rendered into your canvas. See
 
 ```javascript
 {
+   type : "rect|circle|arc|path|image|line..",
    width : 100,
    height : 100,
    radius : 25, 
@@ -116,7 +117,13 @@ Layer properties use to describe how a layer will rendered into your canvas. See
    content : "Hello World!", 
    align : "center", 
    baseline : "middle", 
-   
+   src : "path/to/image.png",
+   children :[], 
+   save : true, 
+   restore : true, 
+   saveAndRestore : true, 
+   paths : [], 
+   points : []
 } 
 
 ```
