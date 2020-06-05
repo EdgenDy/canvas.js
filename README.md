@@ -77,3 +77,16 @@ canvas().render({
    radius : 30,
 });
 ```
+
+##Layer Properties
+
+Layer properties use to describe how a layer will rendered into your canvas. See examples below. 
+
+```javascript
+{
+   width : 100,
+   height : 100,
+   radius : 25
+} 
+
+```
