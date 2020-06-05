@@ -11,7 +11,7 @@ canvas.get(0).render({ // or just 'canvas().render({' for simplification
     color : [255,0,0],
     shadow : {
        x : 0, y : 1, blur : 2,
-       color : 'red' 
+       color : 'rgb(0,0,0,0.3)' 
     }, 
     rotate : {
         angle : 45, x : 50, y : 50
@@ -21,7 +21,7 @@ canvas.get(0).render({ // or just 'canvas().render({' for simplification
 //returns a Canvas object
 ```
 
-Rendering a simple text.
+Rendering a simple "Hello World" text.
 
 ```javascript
 canvas().render({
@@ -31,6 +31,23 @@ canvas().render({
    fontFamily : "Consolas", 
    fontSize : 20,
    color : "royalBlue"
+});
+
+```
+
+Rendering a multi color text. 
+
+```javascript
+canvas().render({
+   type : "text", 
+   x : 20, y : 20,
+   content : [{
+      text : "print", 
+      color : "violet"
+   },{
+      text : '"Hello World"', 
+      color : "royalBlue" 
+   }] 
 });
 
 ```
