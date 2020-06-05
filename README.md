@@ -60,7 +60,7 @@ Rendering an arc
 ```javascript
 canvas().render({
    type : "arc",
-   x : 250, y : 250
+   x : 250, y : 250, 
    radius : 25, 
    angle : {start:0,end:270}
 });
@@ -111,7 +111,12 @@ Layer properties use to describe how a layer will rendered into your canvas. See
       x : 0, y : 1,
       blur : 2,
       color : "rgb(0,0,0,0.3)"
-   } 
+   }, 
+   opacity : 0.2,
+   content : "Hello World!", 
+   align : "center", 
+   baseline : "middle", 
+   
 } 
 
 ```
